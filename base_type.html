@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+
+    <!-- Getting the Basic Introduction setup-->
+    <div id="top_portion">
+    <h1 id="title"> Typing Speed Test </h1>
+    <h1 id="intro_text"> Welcome to the typing speed test.
+        Please click your test option to begin.
+    </h1>
+    </div>
+
+    <!--Display Text Box for Selected Passage-->
+    <div class="textbox-container">
+        <label id="displayBox" for="textEnter"> Display Box </label>
+        <br>
+        <textarea readonly class="textbox" id="textEnter" ></textarea>
+    </div>
+
+
+    <!--User Text Box-->
+    <div class="UserEnter-container"> 
+            <label id="UserEnter" for="textEntered">Type Here</label>
+            <br>
+            <textarea class="txtBOX" id="textEntered" ></textarea>
+    </div>
+
+    <!--  Accordion's for how this Test works  --> 
+
+    <div id="TestInfo">
+        <input type="checkbox" id="info-toggle">
+        <label for="info-toggle">How does this typing test work?</label>
+        <div id="more-info">This test works by displaying the passage that you
+            have selected first. You will then begin typing in that passage in the 
+            box labeled "Type Here." Once you are finished typing press the "Submit Score"
+            button. If you would like to restart, hit the "Restart" button.
+        </div>
+    </div>
+
+    <!-- Accordion's for how the test will be assessed  -->
+    <div id="TestGrade">
+        <input type="checkbox" id="info-add">
+        <label for="info-add">How is my Test assessed?</label>
+        <div id="more-add"> The test is assessed by comparing each word in the passage you typed, in order,
+            to the displayed passage. Time between hitting submit and finishing isn't counted.
+            More than one space in between words will not be counted against you. Others factors will 
+            also be measured: backspaces used, time not typing, WPM, CPM, Errors.
+        </div>
+    </div>
+
+    <!-- Accordion's for new features to be added-->
+    <div id="TestFt">
+        <input type="checkbox" id="info-ft">
+        <label for="info-ft">Features to be added?</label>
+        <div id="ft_txt"> Features to be added include: selecting
+            word limit, staying above a certain error limit, practicing
+            certain types of diffcultly of words (E, M, H).
+        </div>
+    </div>
+
+    <!-- form for the Hard Version-->
+    <br>
+    <div id="HardForm">
+        <label>Hard Version</label>
+        <br> 
+        <input type="checkbox" name="option" value="2" checked="checked", id="H_P"> Hard Passages
+        <br>
+        </div>
+        <button id="h_btn">Submit</button>
+        <br>
+    <!-- form for the Medium Version--> 
+    <br>
+    <form id="MediumForm">
+        <label>Medium Version</label>
+        <br> 
+        <input type="checkbox" name="option" value="2" checked="checked", id="M_P"> Intermediate Passages
+        <br>
+      </form>
+      <button id="m_btn">Submit</button>
+      <br>
+
+      <!-- form for the Easy Version-->
+      <br>
+      <form id="EasyForm">
+          <label>Easy Version</label>
+          <br> 
+          <input type="checkbox" name="option" value="2" checked="checked", id="E_P"> Easy Passages
+          <br>        
+        </form>
+        <button id="e_btn">Submit</button>
+        <br>
+        <br>
+        <button id="restartBTN">Restart</button> 
+        <br>
+        <br>
+        <button id="submitBTN">Submit</button>
+        <div id="FINALRESULTS">
+        <label>Results</label>
+        <br>
+            <p1 id="DISTREST">[No Results]</p1>
+        </div>
+
+    <script src="typer.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
